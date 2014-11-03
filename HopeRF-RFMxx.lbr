@@ -85,6 +85,35 @@
 <text x="3" y="-6.5" size="1.27" layer="21">ANT</text>
 <text x="-3" y="-2" size="1.27" layer="21">RFM98</text>
 </package>
+<package name="RFM69_PADS">
+<smd name="DIO2" x="-10" y="2" dx="3" dy="0.635" layer="1"/>
+<smd name="DIO1" x="-10" y="4" dx="3" dy="0.635" layer="1"/>
+<smd name="DIO0" x="-10" y="6" dx="3" dy="0.635" layer="1"/>
+<smd name="RESET" x="-10" y="8" dx="3" dy="0.635" layer="1"/>
+<smd name="DIO3" x="-10" y="0" dx="3" dy="0.635" layer="1"/>
+<smd name="DIO4" x="-10" y="-2" dx="3" dy="0.635" layer="1"/>
+<smd name="DIO5" x="-10" y="-4" dx="3" dy="0.635" layer="1"/>
+<smd name="VCC" x="-10" y="-6" dx="3" dy="0.635" layer="1"/>
+<smd name="P$9" x="10" y="-6" dx="3" dy="0.635" layer="1"/>
+<smd name="ANT" x="10" y="-4" dx="3" dy="0.635" layer="1"/>
+<smd name="GND" x="10" y="-2" dx="3" dy="0.635" layer="1"/>
+<smd name="SCK" x="10" y="0" dx="3" dy="0.635" layer="1"/>
+<smd name="MISO" x="10" y="2" dx="3" dy="0.635" layer="1"/>
+<smd name="MOSI" x="10" y="4" dx="3" dy="0.635" layer="1"/>
+<smd name="NSS" x="10" y="6" dx="3" dy="0.635" layer="1"/>
+<smd name="NC" x="10" y="8" dx="3" dy="0.635" layer="1"/>
+<wire x1="-10" y1="9" x2="10" y2="9" width="0.127" layer="21"/>
+<wire x1="10" y1="9" x2="10" y2="-7" width="0.127" layer="21"/>
+<wire x1="10" y1="-7" x2="-10" y2="-7" width="0.127" layer="21"/>
+<wire x1="-10" y1="-7" x2="-10" y2="9" width="0.127" layer="21"/>
+<text x="-9" y="10" size="1.27" layer="25">&gt;NAME</text>
+<text x="-2" y="2" size="1.27" layer="25">RFM69</text>
+<wire x1="-7" y1="0" x2="-3" y2="0" width="0.127" layer="25"/>
+<wire x1="-3" y1="0" x2="-3" y2="-4" width="0.127" layer="25"/>
+<wire x1="-3" y1="-4" x2="-7" y2="-4" width="0.127" layer="25"/>
+<wire x1="-7" y1="-4" x2="-7" y2="0" width="0.127" layer="25"/>
+<text x="5" y="-6.5" size="1.27" layer="25">ANT</text>
+</package>
 </packages>
 <symbols>
 <symbol name="RFM98_SYM">
@@ -109,6 +138,28 @@
 <text x="-10.16" y="15.24" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="0" size="1.27" layer="95" rot="R90">RFM98</text>
 </symbol>
+<symbol name="RFM69_SYM">
+<pin name="VCC" x="-17.78" y="7.62" length="middle"/>
+<pin name="MISO" x="-17.78" y="5.08" length="middle"/>
+<pin name="MOSI" x="-17.78" y="2.54" length="middle"/>
+<pin name="SCK" x="-17.78" y="0" length="middle"/>
+<pin name="NSS" x="-17.78" y="-2.54" length="middle"/>
+<pin name="RESET" x="-17.78" y="-5.08" length="middle"/>
+<pin name="GND" x="-17.78" y="-7.62" length="middle"/>
+<pin name="ANT" x="17.78" y="-7.62" length="middle" rot="R180"/>
+<pin name="DIO5" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="DIO4" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="DIO3" x="17.78" y="0" length="middle" rot="R180"/>
+<pin name="DIO2" x="17.78" y="2.54" length="middle" rot="R180"/>
+<pin name="DIO1" x="17.78" y="5.08" length="middle" rot="R180"/>
+<pin name="DIO0" x="17.78" y="7.62" length="middle" rot="R180"/>
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.254" layer="94"/>
+<text x="-10.16" y="12.7" size="1.27" layer="95">&gt;NAME</text>
+<text x="0" y="-2.54" size="1.27" layer="95" rot="R90">RFM69</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="RFM98W">
@@ -117,6 +168,34 @@
 </gates>
 <devices>
 <device name="" package="RFM98_PADS">
+<connects>
+<connect gate="G$1" pin="ANT" pad="ANT"/>
+<connect gate="G$1" pin="DIO0" pad="DIO0"/>
+<connect gate="G$1" pin="DIO1" pad="DIO1"/>
+<connect gate="G$1" pin="DIO2" pad="DIO2"/>
+<connect gate="G$1" pin="DIO3" pad="DIO3"/>
+<connect gate="G$1" pin="DIO4" pad="DIO4"/>
+<connect gate="G$1" pin="DIO5" pad="DIO5"/>
+<connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="MISO" pad="MISO"/>
+<connect gate="G$1" pin="MOSI" pad="MOSI"/>
+<connect gate="G$1" pin="NSS" pad="NSS"/>
+<connect gate="G$1" pin="RESET" pad="RESET"/>
+<connect gate="G$1" pin="SCK" pad="SCK"/>
+<connect gate="G$1" pin="VCC" pad="VCC"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RFM69HW">
+<gates>
+<gate name="G$1" symbol="RFM69_SYM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RFM69_PADS">
 <connects>
 <connect gate="G$1" pin="ANT" pad="ANT"/>
 <connect gate="G$1" pin="DIO0" pad="DIO0"/>
