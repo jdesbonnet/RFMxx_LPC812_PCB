@@ -134,9 +134,9 @@
 <smd name="NSS" x="-8" y="0" dx="3" dy="0.635" layer="1"/>
 <smd name="RESET" x="-8" y="-2" dx="3" dy="0.635" layer="1"/>
 <smd name="DIO5" x="-8" y="-4" dx="3" dy="0.635" layer="1"/>
-<smd name="P$8" x="-8" y="-6" dx="3" dy="0.635" layer="1"/>
+<smd name="GND3" x="-8" y="-6" dx="3" dy="0.635" layer="1"/>
 <smd name="ANT" x="8" y="-6" dx="3" dy="0.635" layer="1"/>
-<smd name="P$10" x="8" y="-4" dx="3" dy="0.635" layer="1"/>
+<smd name="GND2" x="8" y="-4" dx="3" dy="0.635" layer="1"/>
 <smd name="DIO3" x="8" y="-2" dx="3" dy="0.635" layer="1"/>
 <smd name="DIO4" x="8" y="0" dx="3" dy="0.635" layer="1"/>
 <smd name="VCC" x="8" y="2" dx="3" dy="0.635" layer="1"/>
@@ -206,6 +206,8 @@
 <wire x1="-12.7" y1="-7.62" x2="-12.7" y2="12.7" width="0.254" layer="94"/>
 <text x="-10.16" y="15.24" size="1.27" layer="95">&gt;NAME</text>
 <text x="0" y="0" size="1.27" layer="95" rot="R90">RFM98</text>
+<pin name="GND@2" x="-2.54" y="-12.7" length="middle" rot="R90"/>
+<pin name="GND@3" x="2.54" y="-12.7" length="middle" rot="R90"/>
 </symbol>
 <symbol name="RFM69_SYM">
 <pin name="VCC" x="-17.78" y="7.62" length="middle"/>
@@ -246,6 +248,8 @@
 <connect gate="G$1" pin="DIO4" pad="DIO4"/>
 <connect gate="G$1" pin="DIO5" pad="DIO5"/>
 <connect gate="G$1" pin="GND" pad="GND"/>
+<connect gate="G$1" pin="GND@2" pad="GND2"/>
+<connect gate="G$1" pin="GND@3" pad="GND3"/>
 <connect gate="G$1" pin="MISO" pad="MISO"/>
 <connect gate="G$1" pin="MOSI" pad="MOSI"/>
 <connect gate="G$1" pin="NSS" pad="NSS"/>
@@ -5211,6 +5215,8 @@ type RDH, grid 15 mm</description>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5218,7 +5224,7 @@ type RDH, grid 15 mm</description>
 </plain>
 <instances>
 <instance part="U$2" gate="G$1" x="0" y="2.54"/>
-<instance part="X1" gate="G$1" x="20.32" y="-10.16" rot="R180"/>
+<instance part="X1" gate="G$1" x="33.02" y="-12.7" rot="R180"/>
 <instance part="X2" gate="G$1" x="30.48" y="25.4" rot="R180"/>
 <instance part="JP1" gate="A" x="-43.18" y="40.64"/>
 <instance part="U$1" gate="G$1" x="-93.98" y="45.72"/>
@@ -5241,7 +5247,7 @@ type RDH, grid 15 mm</description>
 <instance part="GND1" gate="1" x="-35.56" y="73.66"/>
 <instance part="GND2" gate="1" x="-101.6" y="68.58" rot="R180"/>
 <instance part="GND3" gate="1" x="27.94" y="30.48" rot="R180"/>
-<instance part="GND4" gate="1" x="27.94" y="-5.08" rot="R180"/>
+<instance part="GND4" gate="1" x="30.48" y="-7.62" rot="R180"/>
 <instance part="GND5" gate="1" x="55.88" y="2.54"/>
 <instance part="GND6" gate="1" x="66.04" y="2.54"/>
 <instance part="GND7" gate="1" x="76.2" y="2.54"/>
@@ -5255,6 +5261,8 @@ type RDH, grid 15 mm</description>
 <instance part="P+2" gate="VCC" x="-96.52" y="68.58"/>
 <instance part="P+3" gate="VCC" x="-17.78" y="48.26"/>
 <instance part="P+4" gate="VCC" x="-17.78" y="15.24"/>
+<instance part="GND13" gate="1" x="-2.54" y="-12.7"/>
+<instance part="GND14" gate="1" x="2.54" y="-12.7"/>
 </instances>
 <busses>
 </busses>
@@ -5264,13 +5272,6 @@ type RDH, grid 15 mm</description>
 <pinref part="X2" gate="G$1" pin="1"/>
 <wire x1="17.78" y1="30.48" x2="27.94" y2="25.4" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="ANT"/>
-</segment>
-</net>
-<net name="N$6" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="ANT"/>
-<pinref part="X1" gate="G$1" pin="1"/>
-<wire x1="17.78" y1="-2.54" x2="17.78" y2="-10.16" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$7" class="0">
@@ -5493,7 +5494,7 @@ type RDH, grid 15 mm</description>
 <wire x1="-53.34" y1="55.88" x2="-60.96" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="GND" class="0">
+<net name="N$26" class="0">
 <segment>
 <pinref part="U$4" gate="G$1" pin="-"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -5506,11 +5507,6 @@ type RDH, grid 15 mm</description>
 <segment>
 <pinref part="X2" gate="G$1" pin="2"/>
 <pinref part="GND3" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="X1" gate="G$1" pin="2"/>
-<pinref part="GND4" gate="1" pin="GND"/>
-<wire x1="17.78" y1="-7.62" x2="27.94" y2="-7.62" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="R1" gate="G$1" pin="1"/>
@@ -5543,6 +5539,14 @@ type RDH, grid 15 mm</description>
 <segment>
 <pinref part="U$3" gate="G$1" pin="GND"/>
 <pinref part="GND12" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND@2"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U$2" gate="G$1" pin="GND@3"/>
+<pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -5582,6 +5586,21 @@ type RDH, grid 15 mm</description>
 <pinref part="U$3" gate="G$1" pin="RESET"/>
 <wire x1="-22.86" y1="33.02" x2="-17.78" y2="33.02" width="0.1524" layer="91"/>
 <junction x="-53.34" y="27.94"/>
+</segment>
+</net>
+<net name="GND" class="0">
+<segment>
+<pinref part="X1" gate="G$1" pin="2"/>
+<pinref part="GND4" gate="1" pin="GND"/>
+</segment>
+</net>
+<net name="N$6" class="0">
+<segment>
+<pinref part="U$2" gate="G$1" pin="ANT"/>
+<wire x1="17.78" y1="-2.54" x2="20.32" y2="-2.54" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="-2.54" x2="20.32" y2="-12.7" width="0.1524" layer="91"/>
+<pinref part="X1" gate="G$1" pin="1"/>
+<wire x1="20.32" y1="-12.7" x2="30.48" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
