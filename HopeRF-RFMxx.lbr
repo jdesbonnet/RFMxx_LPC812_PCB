@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -112,7 +112,7 @@
 <wire x1="-3" y1="0" x2="-3" y2="-4" width="0.127" layer="25"/>
 <wire x1="-3" y1="-4" x2="-7" y2="-4" width="0.127" layer="25"/>
 <wire x1="-7" y1="-4" x2="-7" y2="0" width="0.127" layer="25"/>
-<text x="5" y="-6.5" size="1.27" layer="25">ANT</text>
+<text x="5" y="-4.595" size="1.27" layer="25">ANT</text>
 </package>
 </packages>
 <symbols>
@@ -140,9 +140,9 @@
 </symbol>
 <symbol name="RFM69_SYM">
 <pin name="VCC" x="-17.78" y="7.62" length="middle"/>
-<pin name="MISO" x="-17.78" y="5.08" length="middle"/>
-<pin name="MOSI" x="-17.78" y="2.54" length="middle"/>
-<pin name="SCK" x="-17.78" y="0" length="middle"/>
+<pin name="MISO" x="-17.78" y="2.54" length="middle"/>
+<pin name="MOSI" x="-17.78" y="0" length="middle"/>
+<pin name="SCK" x="-17.78" y="5.08" length="middle"/>
 <pin name="NSS" x="-17.78" y="-2.54" length="middle"/>
 <pin name="RESET" x="-17.78" y="-5.08" length="middle"/>
 <pin name="GND" x="-17.78" y="-7.62" length="middle"/>
