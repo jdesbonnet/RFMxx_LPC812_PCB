@@ -3880,6 +3880,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
 <part name="P+2" library="supply1" deviceset="VCC" device=""/>
 <part name="JP3" library="adafruit" deviceset="PINHD-1X3" device=""/>
+<part name="GND_RFM4" library="supply1" deviceset="GND" device=""/>
+<part name="P+5" library="supply1" deviceset="VCC" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3919,6 +3921,8 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="GND2" gate="1" x="-101.6" y="78.74" rot="R180"/>
 <instance part="P+2" gate="VCC" x="-93.98" y="78.74"/>
 <instance part="JP3" gate="A" x="-137.16" y="43.18"/>
+<instance part="GND_RFM4" gate="1" x="27.94" y="30.48" rot="R180"/>
+<instance part="P+5" gate="VCC" x="-17.78" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -3954,6 +3958,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-93.98" y1="66.04" x2="-93.98" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
 <junction x="-93.98" y="76.2"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="VCC"/>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="N$6" class="0">
@@ -4090,6 +4098,10 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="-99.06" y1="66.04" x2="-99.06" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="68.58" x2="-101.6" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-101.6" y1="68.58" x2="-101.6" y2="76.2" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="X2" gate="G$1" pin="2"/>
+<pinref part="GND_RFM4" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$11" class="0">
