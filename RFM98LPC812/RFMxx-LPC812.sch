@@ -8127,7 +8127,19 @@ type 0309, grid 2.5 mm</description>
 <part name="P+6" library="supply1" deviceset="VCC" device="" value="VCC_69"/>
 <part name="LED1" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
 <part name="GND_RFM4" library="supply1" deviceset="GND" device=""/>
-<part name="R1" library="resistor" deviceset="R-US_" device="R0805"/>
+<part name="R1" library="resistor" deviceset="R-US_" device="R0805" value="3K3"/>
+<part name="LED2" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
+<part name="R2" library="resistor" deviceset="R-US_" device="R0805" value="3K3"/>
+<part name="GND6" library="supply1" deviceset="GND" device="" value="GND_69"/>
+<part name="LED3" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
+<part name="R3" library="resistor" deviceset="R-US_" device="R0805" value="3K3"/>
+<part name="GND7" library="supply1" deviceset="GND" device="" value="GND_69"/>
+<part name="LED4" library="adafruit" deviceset="LED" device="CHIP-LED0805"/>
+<part name="R4" library="resistor" deviceset="R-US_" device="R0805" value="3K3"/>
+<part name="GND_RFM6" library="supply1" deviceset="GND" device=""/>
+<part name="TP7" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="TP8" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="TP9" library="testpad" deviceset="TP" device="B1,27"/>
 </parts>
 <sheets>
 <sheet>
@@ -8176,6 +8188,18 @@ type 0309, grid 2.5 mm</description>
 <instance part="LED1" gate="G$1" x="66.04" y="-30.48"/>
 <instance part="GND_RFM4" gate="1" x="66.04" y="-48.26"/>
 <instance part="R1" gate="G$1" x="66.04" y="-40.64" rot="R90"/>
+<instance part="LED2" gate="G$1" x="50.8" y="45.72"/>
+<instance part="R2" gate="G$1" x="50.8" y="35.56" rot="R90"/>
+<instance part="GND6" gate="1" x="50.8" y="27.94"/>
+<instance part="LED3" gate="G$1" x="-119.38" y="86.36" rot="R180"/>
+<instance part="R3" gate="G$1" x="-119.38" y="96.52" rot="R90"/>
+<instance part="GND7" gate="1" x="-119.38" y="104.14" rot="R180"/>
+<instance part="LED4" gate="G$1" x="-119.38" y="-12.7" rot="R180"/>
+<instance part="R4" gate="G$1" x="-119.38" y="-2.54" rot="R90"/>
+<instance part="GND_RFM6" gate="1" x="-119.38" y="5.08" rot="R180"/>
+<instance part="TP7" gate="G$1" x="-121.92" y="40.64" rot="R90"/>
+<instance part="TP8" gate="G$1" x="-121.92" y="38.1" rot="R90"/>
+<instance part="TP9" gate="G$1" x="-121.92" y="35.56" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -8204,6 +8228,7 @@ type 0309, grid 2.5 mm</description>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <pinref part="U$5" gate="G$1" pin="VDD"/>
 <wire x1="-93.98" y1="-7.62" x2="-93.98" y2="0" width="0.1524" layer="91"/>
+<junction x="-93.98" y="0"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VCC"/>
@@ -8215,6 +8240,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-93.98" y1="66.04" x2="-93.98" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="78.74" x2="-93.98" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="P+2" gate="VCC" pin="VCC"/>
+<junction x="-93.98" y="76.2"/>
 </segment>
 <segment>
 <pinref part="JP8" gate="A" pin="1"/>
@@ -8239,6 +8265,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-58.42" y1="-30.48" x2="-43.18" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="MOSI"/>
 <wire x1="-43.18" y1="-30.48" x2="-15.24" y2="-30.48" width="0.1524" layer="91"/>
+<junction x="-43.18" y="-30.48"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -8248,6 +8275,7 @@ type 0309, grid 2.5 mm</description>
 <pinref part="JP4" gate="A" pin="4"/>
 <pinref part="U$2" gate="G$1" pin="SCK"/>
 <wire x1="-43.18" y1="-33.02" x2="-15.24" y2="-33.02" width="0.1524" layer="91"/>
+<junction x="-43.18" y="-33.02"/>
 </segment>
 </net>
 <net name="N$12" class="0">
@@ -8257,6 +8285,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-58.42" y1="-38.1" x2="-43.18" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="RESET"/>
 <wire x1="-43.18" y1="-38.1" x2="-15.24" y2="-38.1" width="0.1524" layer="91"/>
+<junction x="-43.18" y="-38.1"/>
 </segment>
 </net>
 <net name="N$13" class="0">
@@ -8266,6 +8295,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-58.42" y1="35.56" x2="-45.72" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="RESET"/>
 <wire x1="-45.72" y1="35.56" x2="-17.78" y2="35.56" width="0.1524" layer="91"/>
+<junction x="-45.72" y="35.56"/>
 </segment>
 </net>
 <net name="N$14" class="0">
@@ -8275,6 +8305,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-58.42" y1="38.1" x2="-45.72" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="NSS"/>
 <wire x1="-45.72" y1="38.1" x2="-17.78" y2="38.1" width="0.1524" layer="91"/>
+<junction x="-45.72" y="38.1"/>
 </segment>
 </net>
 <net name="N$15" class="0">
@@ -8284,6 +8315,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-58.42" y1="40.64" x2="-45.72" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="MOSI"/>
 <wire x1="-45.72" y1="40.64" x2="-17.78" y2="40.64" width="0.1524" layer="91"/>
+<junction x="-45.72" y="40.64"/>
 </segment>
 </net>
 <net name="N$16" class="0">
@@ -8293,6 +8325,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-58.42" y1="43.18" x2="-45.72" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="MISO"/>
 <wire x1="-45.72" y1="43.18" x2="-17.78" y2="43.18" width="0.1524" layer="91"/>
+<junction x="-45.72" y="43.18"/>
 </segment>
 </net>
 <net name="N$19" class="0">
@@ -8303,6 +8336,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-58.42" y1="45.72" x2="-45.72" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="SCK"/>
 <wire x1="-45.72" y1="45.72" x2="-17.78" y2="45.72" width="0.1524" layer="91"/>
+<junction x="-45.72" y="45.72"/>
 </segment>
 </net>
 <net name="N$8" class="0">
@@ -8312,6 +8346,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-58.42" y1="-35.56" x2="-43.18" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="NSS"/>
 <wire x1="-43.18" y1="-35.56" x2="-15.24" y2="-35.56" width="0.1524" layer="91"/>
+<junction x="-43.18" y="-35.56"/>
 </segment>
 </net>
 <net name="GND" class="0">
@@ -8344,6 +8379,7 @@ type 0309, grid 2.5 mm</description>
 <pinref part="U$5" gate="G$1" pin="VSS"/>
 <wire x1="-99.06" y1="-7.62" x2="-101.6" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-101.6" y1="-7.62" x2="-101.6" y2="0" width="0.1524" layer="91"/>
+<junction x="-101.6" y="0"/>
 </segment>
 <segment>
 <pinref part="JP2" gate="A" pin="1"/>
@@ -8372,10 +8408,23 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-101.6" y1="68.58" x2="-101.6" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-101.6" y1="78.74" x2="-101.6" y2="76.2" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
+<junction x="-101.6" y="76.2"/>
 </segment>
 <segment>
 <pinref part="GND_RFM4" gate="1" pin="GND"/>
 <pinref part="R1" gate="G$1" pin="1"/>
+</segment>
+<segment>
+<pinref part="R2" gate="G$1" pin="1"/>
+<pinref part="GND6" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="2"/>
+<pinref part="GND7" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="2"/>
+<pinref part="GND_RFM6" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="N$11" class="0">
@@ -8387,6 +8436,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-53.34" y1="-27.94" x2="-43.18" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="MISO"/>
 <wire x1="-43.18" y1="-27.94" x2="-15.24" y2="-27.94" width="0.1524" layer="91"/>
+<junction x="-43.18" y="-27.94"/>
 </segment>
 </net>
 <net name="N$17" class="0">
@@ -8409,9 +8459,9 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$20" class="0">
 <segment>
-<wire x1="-124.46" y1="-12.7" x2="-124.46" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-124.46" y1="7.62" x2="-53.34" y2="7.62" width="0.1524" layer="91"/>
-<wire x1="-53.34" y1="7.62" x2="-53.34" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="-12.7" x2="-124.46" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-124.46" y1="10.16" x2="-53.34" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="-53.34" y1="10.16" x2="-53.34" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="U$5" gate="G$1" pin="PIO0_0/ACMP_I1/TDO"/>
 <wire x1="-53.34" y1="-17.78" x2="-58.42" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="A" pin="4"/>
@@ -8451,16 +8501,6 @@ type 0309, grid 2.5 mm</description>
 <segment>
 <pinref part="U$5" gate="G$1" pin="PIO0_16"/>
 <pinref part="TP1" gate="G$1" pin="TP"/>
-</segment>
-</net>
-<net name="N$26" class="0">
-<segment>
-<pinref part="U$5" gate="G$1" pin="PIO0_17"/>
-<wire x1="-119.38" y1="-15.24" x2="-119.38" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="-119.38" y1="12.7" x2="40.64" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="40.64" y1="12.7" x2="40.64" y2="-30.48" width="0.1524" layer="91"/>
-<pinref part="U$2" gate="G$1" pin="DIO2"/>
-<wire x1="40.64" y1="-30.48" x2="20.32" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$27" class="0">
@@ -8568,16 +8608,9 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-53.34" y1="60.96" x2="-53.34" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="PIO0_6/VDDCMP"/>
 <wire x1="-53.34" y1="53.34" x2="-58.42" y2="53.34" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$36" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="DIO2"/>
-<wire x1="17.78" y1="43.18" x2="30.48" y2="43.18" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="43.18" x2="30.48" y2="66.04" width="0.1524" layer="91"/>
-<wire x1="30.48" y1="66.04" x2="-119.38" y2="66.04" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PIO0_17"/>
-<wire x1="-119.38" y1="66.04" x2="-119.38" y2="58.42" width="0.1524" layer="91"/>
+<pinref part="LED2" gate="G$1" pin="A"/>
+<wire x1="25.4" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
+<junction x="25.4" y="48.26"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -8595,6 +8628,55 @@ type 0309, grid 2.5 mm</description>
 <segment>
 <pinref part="R1" gate="G$1" pin="2"/>
 <pinref part="LED1" gate="G$1" pin="C"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="LED2" gate="G$1" pin="C"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+</segment>
+</net>
+<net name="N$36" class="0">
+<segment>
+<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="U$1" gate="G$1" pin="PIO0_17"/>
+<wire x1="-119.38" y1="83.82" x2="-119.38" y2="58.42" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="R4" gate="G$1" pin="1"/>
+</segment>
+</net>
+<net name="N$26" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="PIO0_17"/>
+<pinref part="LED4" gate="G$1" pin="A"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PIO0_11"/>
+<pinref part="TP7" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$43" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PIO0_10"/>
+<pinref part="TP8" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$44" class="0">
+<segment>
+<pinref part="U$1" gate="G$1" pin="PIO0_16"/>
+<pinref part="TP9" gate="G$1" pin="TP"/>
 </segment>
 </net>
 </nets>
