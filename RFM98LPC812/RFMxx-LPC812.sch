@@ -8097,7 +8097,6 @@ type 0309, grid 2.5 mm</description>
 <part name="U$5" library="LPC812" deviceset="LPC812M101JD20" device=""/>
 <part name="JP4" library="adafruit" deviceset="PINHD-1X6" device=""/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
-<part name="GND_RFM1" library="supply1" deviceset="GND" device=""/>
 <part name="JP5" library="adafruit" deviceset="PINHD-1X3" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="GND_PWR" library="supply1" deviceset="GND" device=""/>
@@ -8140,6 +8139,7 @@ type 0309, grid 2.5 mm</description>
 <part name="TP7" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="TP8" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="TP9" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="GND_RFM1" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -8157,7 +8157,6 @@ type 0309, grid 2.5 mm</description>
 <instance part="U$5" gate="G$1" x="-91.44" y="-27.94"/>
 <instance part="JP4" gate="A" x="-40.64" y="-33.02"/>
 <instance part="P+1" gate="VCC" x="-93.98" y="2.54"/>
-<instance part="GND_RFM1" gate="1" x="-101.6" y="2.54" rot="R180"/>
 <instance part="JP5" gate="A" x="55.88" y="5.08"/>
 <instance part="P+3" gate="VCC" x="63.5" y="17.78"/>
 <instance part="GND_PWR" gate="1" x="63.5" y="-2.54"/>
@@ -8200,6 +8199,7 @@ type 0309, grid 2.5 mm</description>
 <instance part="TP7" gate="G$1" x="-121.92" y="40.64" rot="R90"/>
 <instance part="TP8" gate="G$1" x="-121.92" y="38.1" rot="R90"/>
 <instance part="TP9" gate="G$1" x="-121.92" y="35.56" rot="R90"/>
+<instance part="GND_RFM1" gate="1" x="-101.6" y="2.54" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -8374,14 +8374,6 @@ type 0309, grid 2.5 mm</description>
 <pinref part="GND_RFM3" gate="1" pin="GND"/>
 </segment>
 <segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="GND_RFM1" gate="1" pin="GND"/>
-<pinref part="U$5" gate="G$1" pin="VSS"/>
-<wire x1="-99.06" y1="-7.62" x2="-101.6" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="-7.62" x2="-101.6" y2="0" width="0.1524" layer="91"/>
-<junction x="-101.6" y="0"/>
-</segment>
-<segment>
 <pinref part="JP2" gate="A" pin="1"/>
 <wire x1="-139.7" y1="68.58" x2="-129.54" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="GND1" gate="1" pin="GND"/>
@@ -8425,6 +8417,14 @@ type 0309, grid 2.5 mm</description>
 <segment>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="GND_RFM6" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<pinref part="U$5" gate="G$1" pin="VSS"/>
+<wire x1="-99.06" y1="-7.62" x2="-101.6" y2="-7.62" width="0.1524" layer="91"/>
+<wire x1="-101.6" y1="-7.62" x2="-101.6" y2="0" width="0.1524" layer="91"/>
+<pinref part="GND_RFM1" gate="1" pin="GND"/>
+<junction x="-101.6" y="0"/>
 </segment>
 </net>
 <net name="N$11" class="0">
