@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -8096,7 +8096,6 @@ type 0309, grid 2.5 mm</description>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
 <part name="U$5" library="LPC812" deviceset="LPC812M101JD20" device=""/>
 <part name="JP4" library="adafruit" deviceset="PINHD-1X6" device=""/>
-<part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="JP5" library="adafruit" deviceset="PINHD-1X3" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
 <part name="GND_PWR" library="supply1" deviceset="GND" device=""/>
@@ -8105,7 +8104,7 @@ type 0309, grid 2.5 mm</description>
 <part name="GND_RFM7" library="supply1" deviceset="GND" device=""/>
 <part name="GND_RFM2" library="supply1" deviceset="GND" device=""/>
 <part name="GND_RFM3" library="supply1" deviceset="GND" device=""/>
-<part name="C1" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
+<part name="C1" library="adafruit" deviceset="C-US" device="C0805" value="100nF"/>
 <part name="TP1" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="JP7" library="adafruit" deviceset="PINHD-1X3" device=""/>
 <part name="TP2" library="testpad" deviceset="TP" device="B1,27"/>
@@ -8139,7 +8138,12 @@ type 0309, grid 2.5 mm</description>
 <part name="TP7" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="TP8" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="TP9" library="testpad" deviceset="TP" device="B1,27"/>
-<part name="GND_RFM1" library="supply1" deviceset="GND" device=""/>
+<part name="DIO1" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="DIO2" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="DIO3" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="DIO4" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="DIO5" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="DIO0" library="testpad" deviceset="TP" device="B1,27"/>
 </parts>
 <sheets>
 <sheet>
@@ -8156,7 +8160,6 @@ type 0309, grid 2.5 mm</description>
 <instance part="P+4" gate="VCC" x="-15.24" y="-20.32"/>
 <instance part="U$5" gate="G$1" x="-91.44" y="-27.94"/>
 <instance part="JP4" gate="A" x="-40.64" y="-33.02"/>
-<instance part="P+1" gate="VCC" x="-93.98" y="2.54"/>
 <instance part="JP5" gate="A" x="55.88" y="5.08"/>
 <instance part="P+3" gate="VCC" x="63.5" y="17.78"/>
 <instance part="GND_PWR" gate="1" x="63.5" y="-2.54"/>
@@ -8199,7 +8202,12 @@ type 0309, grid 2.5 mm</description>
 <instance part="TP7" gate="G$1" x="-121.92" y="40.64" rot="R90"/>
 <instance part="TP8" gate="G$1" x="-121.92" y="38.1" rot="R90"/>
 <instance part="TP9" gate="G$1" x="-121.92" y="35.56" rot="R90"/>
-<instance part="GND_RFM1" gate="1" x="-101.6" y="2.54" rot="R180"/>
+<instance part="DIO1" gate="G$1" x="20.32" y="45.72" rot="R270"/>
+<instance part="DIO2" gate="G$1" x="20.32" y="43.18" rot="R270"/>
+<instance part="DIO3" gate="G$1" x="20.32" y="40.64" rot="R270"/>
+<instance part="DIO4" gate="G$1" x="20.32" y="38.1" rot="R270"/>
+<instance part="DIO5" gate="G$1" x="20.32" y="35.56" rot="R270"/>
+<instance part="DIO0" gate="G$1" x="20.32" y="50.8"/>
 </instances>
 <busses>
 </busses>
@@ -8222,13 +8230,6 @@ type 0309, grid 2.5 mm</description>
 <wire x1="53.34" y1="7.62" x2="63.5" y2="7.62" width="0.1524" layer="91"/>
 <pinref part="P+3" gate="VCC" pin="VCC"/>
 <wire x1="63.5" y1="7.62" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="P+1" gate="VCC" pin="VCC"/>
-<pinref part="U$5" gate="G$1" pin="VDD"/>
-<wire x1="-93.98" y1="-7.62" x2="-93.98" y2="0" width="0.1524" layer="91"/>
-<junction x="-93.98" y="0"/>
 </segment>
 <segment>
 <pinref part="U$3" gate="G$1" pin="VCC"/>
@@ -8418,14 +8419,6 @@ type 0309, grid 2.5 mm</description>
 <pinref part="R4" gate="G$1" pin="2"/>
 <pinref part="GND_RFM6" gate="1" pin="GND"/>
 </segment>
-<segment>
-<pinref part="C1" gate="G$1" pin="2"/>
-<pinref part="U$5" gate="G$1" pin="VSS"/>
-<wire x1="-99.06" y1="-7.62" x2="-101.6" y2="-7.62" width="0.1524" layer="91"/>
-<wire x1="-101.6" y1="-7.62" x2="-101.6" y2="0" width="0.1524" layer="91"/>
-<pinref part="GND_RFM1" gate="1" pin="GND"/>
-<junction x="-101.6" y="0"/>
-</segment>
 </net>
 <net name="N$11" class="0">
 <segment>
@@ -8602,7 +8595,8 @@ type 0309, grid 2.5 mm</description>
 <net name="N$24" class="0">
 <segment>
 <pinref part="U$3" gate="G$1" pin="DIO0"/>
-<wire x1="17.78" y1="48.26" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="17.78" y1="48.26" x2="20.32" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="20.32" y1="48.26" x2="25.4" y2="48.26" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="48.26" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="60.96" x2="-53.34" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="60.96" x2="-53.34" y2="53.34" width="0.1524" layer="91"/>
@@ -8611,6 +8605,8 @@ type 0309, grid 2.5 mm</description>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <wire x1="25.4" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
 <junction x="25.4" y="48.26"/>
+<pinref part="DIO0" gate="G$1" pin="TP"/>
+<junction x="20.32" y="48.26"/>
 </segment>
 </net>
 <net name="N$35" class="0">
@@ -8677,6 +8673,51 @@ type 0309, grid 2.5 mm</description>
 <segment>
 <pinref part="U$1" gate="G$1" pin="PIO0_16"/>
 <pinref part="TP9" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$45" class="0">
+<segment>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="-101.6" y1="0" x2="-101.6" y2="-7.62" width="0.1524" layer="91"/>
+<pinref part="U$5" gate="G$1" pin="VSS"/>
+<wire x1="-101.6" y1="-7.62" x2="-99.06" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$46" class="0">
+<segment>
+<pinref part="C1" gate="G$1" pin="1"/>
+<pinref part="U$5" gate="G$1" pin="VDD"/>
+<wire x1="-93.98" y1="0" x2="-93.98" y2="-7.62" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$47" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="DIO1"/>
+<pinref part="DIO1" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$48" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="DIO2"/>
+<pinref part="DIO2" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$49" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="DIO3"/>
+<pinref part="DIO3" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$50" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="DIO4"/>
+<pinref part="DIO4" gate="G$1" pin="TP"/>
+</segment>
+</net>
+<net name="N$51" class="0">
+<segment>
+<pinref part="U$3" gate="G$1" pin="DIO5"/>
+<pinref part="DIO5" gate="G$1" pin="TP"/>
 </segment>
 </net>
 </nets>
