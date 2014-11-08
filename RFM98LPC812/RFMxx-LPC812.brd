@@ -160,6 +160,20 @@
 <text x="0.635" y="9.906" size="0.6096" layer="21" rot="R90">RXD</text>
 <text x="0.635" y="12.573" size="0.6096" layer="21" rot="R90">TXD</text>
 <text x="0.635" y="15.24" size="0.6096" layer="21" rot="R90">RST</text>
+<text x="28.194" y="2.794" size="0.6096" layer="21">RST</text>
+<text x="28.194" y="5.461" size="0.6096" layer="21">NSS</text>
+<text x="28.067" y="8.001" size="0.6096" layer="21">SCK</text>
+<text x="28.194" y="10.668" size="0.6096" layer="21">MOSI</text>
+<text x="28.194" y="13.081" size="0.6096" layer="21">MISO</text>
+<text x="28.194" y="15.748" size="0.6096" layer="21">DIO0</text>
+<text x="52.197" y="10.287" size="0.6096" layer="21">DIO4</text>
+<text x="29.591" y="4.699" size="0.6096" layer="21">DIO5</text>
+<text x="51.816" y="13.97" size="0.6096" layer="21">DIO2</text>
+<text x="21.844" y="20.574" size="0.6096" layer="21">RST</text>
+<text x="21.717" y="23.241" size="0.6096" layer="21">NSS</text>
+<text x="26.162" y="25.781" size="0.6096" layer="21">MOSI</text>
+<text x="26.035" y="28.321" size="0.6096" layer="21">MISO</text>
+<text x="21.717" y="30.988" size="0.6096" layer="21">SCK</text>
 </plain>
 <libraries>
 <library name="adafruit">
@@ -1809,12 +1823,14 @@ Your Eurocircuits Team
 <attribute name="VALUE" x="27.9425" y="27.305" size="1.27" layer="27"/>
 </element>
 <element name="LPC812_RFM69" library="LPC812" package="SOIC20" value="LPC812M101JD20" x="13.335" y="26.035" rot="R270"/>
-<element name="U$3" library="hoperf-rfmxx" package="RFM69_PADS" value="RFM69HW" x="46.99" y="29.21" rot="R180"/>
+<element name="U$3" library="hoperf-rfmxx" package="RFM69_PADS" value="RFM69HW" x="46.99" y="29.21" smashed="yes" rot="R180"/>
 <element name="JP2" library="adafruit" package="1X06" value="" x="1.905" y="27.305" smashed="yes" rot="R90">
 <attribute name="VALUE" x="5.08" y="19.685" size="1.27" layer="27" rot="R90"/>
 </element>
 <element name="LPC812_RFM98" library="LPC812" package="SOIC20" value="LPC812M101JD20" x="13.335" y="8.255" rot="R270"/>
-<element name="JP4" library="adafruit" package="1X06" value="" x="26.67" y="9.525" rot="R270"/>
+<element name="JP4" library="adafruit" package="1X06" value="" x="26.67" y="9.525" smashed="yes" rot="R270">
+<attribute name="VALUE" x="23.495" y="17.145" size="1.27" layer="27" rot="R270"/>
+</element>
 <element name="JP5" library="adafruit" package="1X03" value="" x="55.245" y="15.875" smashed="yes">
 <attribute name="NAME" x="51.2572" y="15.1638" size="0.6096" layer="25" ratio="10" rot="R90"/>
 <attribute name="VALUE" x="51.435" y="12.7" size="1.27" layer="27"/>
@@ -1825,21 +1841,28 @@ Your Eurocircuits Team
 <element name="C1" library="adafruit" package="C0805" value="100nF" x="21.59" y="9.525" smashed="yes" rot="R90">
 <attribute name="NAME" x="20.574" y="8.636" size="1.27" layer="25" rot="R90"/>
 </element>
-<element name="TP1" library="testpad" package="B1,27" value="TPB1,27" x="6.35" y="3.81">
-<attribute name="TP_SIGNAL_NAME" value="" x="6.35" y="3.81" size="1.778" layer="27" display="off"/>
+<element name="TP1" library="testpad" package="B1,27" value="TPB1,27" x="6.35" y="3.81" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="5.715" y="1.905" size="1" layer="37"/>
+<attribute name="VALUE" x="5.715" y="3.048" size="0.0254" layer="27"/>
 </element>
-<element name="JP7" library="adafruit" package="1X03" value="" x="4.445" y="8.255" rot="R270"/>
-<element name="TP3" library="testpad" package="B1,27" value="TPB1,27" x="51.435" y="10.4775">
-<attribute name="TP_SIGNAL_NAME" value="" x="51.435" y="10.4775" size="1.27" layer="27" display="off"/>
+<element name="JP7" library="adafruit" package="1X03" value="" x="4.445" y="8.255" smashed="yes" rot="R270">
+<attribute name="VALUE" x="1.27" y="12.065" size="1.27" layer="27" rot="R270"/>
 </element>
-<element name="TP4" library="testpad" package="B1,27" value="TPB1,27" x="6.35" y="5.3975">
-<attribute name="TP_SIGNAL_NAME" value="" x="6.35" y="5.3975" size="1.27" layer="27" display="off"/>
+<element name="TP3X" library="testpad" package="B1,27" value="TPB1,27" x="51.435" y="10.4775" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="50.8" y="8.5725" size="1" layer="37"/>
+<attribute name="VALUE" x="50.8" y="9.7155" size="0.0254" layer="27"/>
 </element>
-<element name="TP5" library="testpad" package="B1,27" value="TPB1,27" x="6.35" y="6.985">
-<attribute name="TP_SIGNAL_NAME" value="" x="6.35" y="6.985" size="1.27" layer="27" display="off"/>
+<element name="TP4" library="testpad" package="B1,27" value="TPB1,27" x="6.35" y="5.3975" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="5.715" y="3.4925" size="1" layer="37"/>
+<attribute name="VALUE" x="5.715" y="4.6355" size="0.0254" layer="27"/>
 </element>
-<element name="D_5" library="testpad" package="B1,27" value="TPB1,27" x="29.21" y="4.1275">
-<attribute name="TP_SIGNAL_NAME" value="" x="29.21" y="4.1275" size="1.27" layer="27" display="off"/>
+<element name="TP5" library="testpad" package="B1,27" value="TPB1,27" x="6.35" y="6.985" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="5.715" y="5.08" size="1" layer="37"/>
+<attribute name="VALUE" x="5.715" y="6.223" size="0.0254" layer="27"/>
+</element>
+<element name="D_5" library="testpad" package="B1,27" value="TPB1,27" x="29.21" y="4.1275" smashed="yes">
+<attribute name="TP_SIGNAL_NAME" value="" x="28.575" y="2.2225" size="1" layer="37"/>
+<attribute name="VALUE" x="28.575" y="3.3655" size="0.0254" layer="27"/>
 </element>
 <element name="C2" library="adafruit" package="C0805" value="100nF" x="20.955" y="27.305" smashed="yes" rot="R90">
 <attribute name="NAME" x="19.939" y="26.924" size="0.6096" layer="25" rot="R90"/>
@@ -1874,7 +1897,9 @@ Your Eurocircuits Team
 <attribute name="NAME" x="6.223" y="17.399" size="0.6096" layer="25" rot="R180"/>
 <attribute name="VALUE" x="6.35" y="18.415" size="1.27" layer="27" rot="R180"/>
 </element>
-<element name="R4" library="resistor" package="R0805" value="3K3" x="4.445" y="2.54" rot="R270"/>
+<element name="R4" library="resistor" package="R0805" value="3K3" x="4.445" y="2.54" smashed="yes" rot="R270">
+<attribute name="NAME" x="5.334" y="3.175" size="0.6096" layer="25" rot="R270"/>
+</element>
 <element name="TP7" library="testpad" package="B1,27" value="TPB1,27" x="6.35" y="24.4475">
 <attribute name="TP_SIGNAL_NAME" value="" x="6.35" y="24.4475" size="1.27" layer="27" display="off"/>
 </element>
@@ -1886,7 +1911,6 @@ Your Eurocircuits Team
 </element>
 <element name="TP12" library="testpad" package="B1,27" value="TPB1,27" x="51.1175" y="13.97" smashed="yes">
 <attribute name="TP_SIGNAL_NAME" value="" x="50.4825" y="12.065" size="1" layer="37"/>
-<attribute name="NAME" x="51.6255" y="13.97" size="0.6096" layer="25" ratio="10"/>
 <attribute name="VALUE" x="50.4825" y="13.208" size="0.0254" layer="27"/>
 </element>
 <element name="PIO0_14" library="testpad" package="B1,27" value="TPB1,27" x="21.2725" y="33.02" smashed="yes">
@@ -2309,7 +2333,7 @@ Your Eurocircuits Team
 </signal>
 <signal name="N$31">
 <contactref element="U$2" pad="DIO4"/>
-<contactref element="TP3" pad="TP"/>
+<contactref element="TP3X" pad="TP"/>
 <wire x1="50.5206" y1="10.4648" x2="51.6636" y2="10.4648" width="0.254" layer="1"/>
 <wire x1="48.4632" y1="8.4074" x2="50.5206" y2="10.4648" width="0.254" layer="1"/>
 <wire x1="48.006" y1="8.4074" x2="48.4632" y2="8.4074" width="0.254" layer="1"/>
