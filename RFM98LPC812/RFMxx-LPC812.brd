@@ -1807,30 +1807,6 @@ design rules under a new name.</description>
 <element name="TP9" library="testpad" package="B1,27" value="TPB1,27" x="6.35" y="21.2725">
 <attribute name="TP_SIGNAL_NAME" value="" x="6.35" y="21.2725" size="1.27" layer="27" display="off"/>
 </element>
-<element name="D1" library="testpad" package="B1,27" value="TPB1,27" x="52.705" y="24.765" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="52.705" y="24.765" size="1.778" layer="28" rot="MR0" display="off"/>
-</element>
-<element name="D2" library="testpad" package="B1,27" value="TPB1,27" x="46.99" y="27.305" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="46.99" y="27.305" size="1.778" layer="28" rot="MR0" display="off"/>
-</element>
-<element name="D3" library="testpad" package="B1,27" value="TPB1,27" x="52.705" y="29.21" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="52.705" y="29.21" size="1.778" layer="28" rot="MR0" display="off"/>
-</element>
-<element name="D4" library="testpad" package="B1,27" value="TPB1,27" x="46.99" y="31.115" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="46.99" y="31.115" size="1.778" layer="28" rot="MR0" display="off"/>
-</element>
-<element name="D5" library="testpad" package="B1,27" value="TPB1,27" x="52.705" y="34.29" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="52.705" y="34.29" size="1.778" layer="28" rot="MR0" display="off"/>
-</element>
-<element name="D0" library="testpad" package="B1,27" value="TPB1,27" x="46.99" y="23.495" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="46.99" y="23.495" size="1.778" layer="28" rot="MR0" display="off"/>
-</element>
-<element name="D_0" library="testpad" package="B1,27" value="TPB1,27" x="44.1325" y="12.3825" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="44.1325" y="12.3825" size="1.778" layer="28" rot="MR0" display="off"/>
-</element>
-<element name="D_1" library="testpad" package="B1,27" value="TPB1,27" x="44.1325" y="14.2875" rot="MR0">
-<attribute name="TP_SIGNAL_NAME" value="" x="44.1325" y="14.2875" size="1.778" layer="28" rot="MR0" display="off"/>
-</element>
 <element name="TP12" library="testpad" package="B1,27" value="TPB1,27" x="51.1175" y="13.97">
 <attribute name="TP_SIGNAL_NAME" value="" x="51.1175" y="13.97" size="1.778" layer="27" display="off"/>
 </element>
@@ -2202,14 +2178,12 @@ design rules under a new name.</description>
 <wire x1="26.9748" y1="15.5448" x2="48.9204" y2="15.5448" width="0.254" layer="1"/>
 <wire x1="26.7462" y1="15.7734" x2="26.9748" y2="15.5448" width="0.254" layer="1"/>
 <wire x1="26.7462" y1="15.7734" x2="26.67" y2="15.875" width="0.254" layer="1"/>
-<contactref element="D_0" pad="TP"/>
 <wire x1="23.5458" y1="12.8016" x2="18.5166" y2="12.8016" width="0.254" layer="1"/>
 <wire x1="26.5176" y1="15.7734" x2="23.5458" y2="12.8016" width="0.254" layer="1"/>
 <wire x1="18.5166" y1="12.8016" x2="18.3642" y2="12.7" width="0.254" layer="1"/>
 <wire x1="26.5176" y1="15.7734" x2="26.67" y2="15.875" width="0.254" layer="1"/>
 <wire x1="45.4914" y1="12.3444" x2="44.3484" y2="12.3444" width="0.254" layer="16"/>
 <wire x1="47.7774" y1="12.3444" x2="45.4914" y2="12.3444" width="0.254" layer="1"/>
-<wire x1="44.3484" y1="12.3444" x2="44.1325" y2="12.3825" width="0.254" layer="16"/>
 <wire x1="47.7774" y1="12.3444" x2="47.85" y2="12.255" width="0.254" layer="1"/>
 <via x="45.4914" y="12.3444" extent="1-16" drill="0.6096"/>
 </signal>
@@ -2223,10 +2197,8 @@ design rules under a new name.</description>
 <signal name="N$27">
 <contactref element="U$5" pad="20"/>
 <contactref element="U$2" pad="DIO1"/>
-<contactref element="D_1" pad="TP"/>
 <wire x1="45.4914" y1="14.4018" x2="44.3484" y2="14.4018" width="0.254" layer="16"/>
 <wire x1="47.7774" y1="14.4018" x2="45.4914" y2="14.4018" width="0.254" layer="1"/>
-<wire x1="44.3484" y1="14.4018" x2="44.1325" y2="14.2875" width="0.254" layer="16"/>
 <wire x1="47.7774" y1="14.4018" x2="47.85" y2="14.255" width="0.254" layer="1"/>
 <wire x1="15.0876" y1="15.0876" x2="18.288" y2="15.0876" width="0.254" layer="1"/>
 <wire x1="14.1732" y1="14.1732" x2="15.0876" y2="15.0876" width="0.254" layer="1"/>
@@ -2357,10 +2329,8 @@ design rules under a new name.</description>
 <wire x1="18.5166" y1="30.4038" x2="18.3642" y2="30.48" width="0.254" layer="1"/>
 <via x="21.0312" y="30.4038" extent="1-16" drill="0.6096"/>
 <via x="39.5478" y="21.9456" extent="1-16" drill="0.6096"/>
-<contactref element="D0" pad="TP"/>
-<wire x1="40.9194" y1="23.3172" x2="46.863" y2="23.3172" width="0.254" layer="16"/>
-<wire x1="39.5478" y1="21.9456" x2="40.9194" y2="23.3172" width="0.254" layer="16"/>
-<wire x1="46.863" y1="23.3172" x2="46.99" y2="23.495" width="0.254" layer="16"/>
+<wire x1="40.9194" y1="23.3172" x2="46.863" y2="23.3172" width="0" layer="19" extent="1-16"/>
+<wire x1="39.5478" y1="21.9456" x2="40.9194" y2="23.3172" width="0" layer="19" extent="1-16"/>
 </signal>
 <signal name="N$35">
 <contactref element="JP2" pad="4"/>
@@ -2443,52 +2413,6 @@ design rules under a new name.</description>
 <wire x1="8.2296" y1="21.4884" x2="6.4008" y2="21.4884" width="0.254" layer="1"/>
 <wire x1="6.4008" y1="21.4884" x2="6.35" y2="21.2725" width="0.254" layer="1"/>
 <wire x1="8.2296" y1="21.4884" x2="8.3058" y2="21.59" width="0.254" layer="1"/>
-</signal>
-<signal name="N$47">
-<contactref element="U$3" pad="DIO1"/>
-<contactref element="D1" pad="TP"/>
-<wire x1="54.6354" y1="24.9174" x2="52.8066" y2="24.9174" width="0.254" layer="16"/>
-<wire x1="56.6928" y1="24.9174" x2="54.6354" y2="24.9174" width="0.254" layer="1"/>
-<wire x1="56.9214" y1="25.146" x2="56.6928" y2="24.9174" width="0.254" layer="1"/>
-<wire x1="52.8066" y1="24.9174" x2="52.705" y2="24.765" width="0.254" layer="16"/>
-<wire x1="56.9214" y1="25.146" x2="56.99" y2="25.21" width="0.254" layer="1"/>
-<via x="54.6354" y="24.9174" extent="1-16" drill="0.6096"/>
-</signal>
-<signal name="N$48">
-<contactref element="U$3" pad="DIO2"/>
-<contactref element="D2" pad="TP"/>
-<wire x1="54.6354" y1="27.432" x2="47.0916" y2="27.432" width="0.254" layer="16"/>
-<wire x1="56.9214" y1="27.432" x2="54.6354" y2="27.432" width="0.254" layer="1"/>
-<wire x1="47.0916" y1="27.432" x2="46.99" y2="27.305" width="0.254" layer="16"/>
-<wire x1="56.9214" y1="27.432" x2="56.99" y2="27.21" width="0.254" layer="1"/>
-<via x="54.6354" y="27.432" extent="1-16" drill="0.6096"/>
-</signal>
-<signal name="N$49">
-<contactref element="U$3" pad="DIO3"/>
-<contactref element="D3" pad="TP"/>
-<wire x1="54.6354" y1="29.2608" x2="52.8066" y2="29.2608" width="0.254" layer="16"/>
-<wire x1="56.9214" y1="29.2608" x2="54.6354" y2="29.2608" width="0.254" layer="1"/>
-<wire x1="52.8066" y1="29.2608" x2="52.705" y2="29.21" width="0.254" layer="16"/>
-<wire x1="56.9214" y1="29.2608" x2="56.99" y2="29.21" width="0.254" layer="1"/>
-<via x="54.6354" y="29.2608" extent="1-16" drill="0.6096"/>
-</signal>
-<signal name="N$50">
-<contactref element="U$3" pad="DIO4"/>
-<contactref element="D4" pad="TP"/>
-<wire x1="54.6354" y1="31.0896" x2="47.0916" y2="31.0896" width="0.254" layer="16"/>
-<wire x1="56.9214" y1="31.0896" x2="54.6354" y2="31.0896" width="0.254" layer="1"/>
-<wire x1="47.0916" y1="31.0896" x2="46.99" y2="31.115" width="0.254" layer="16"/>
-<wire x1="56.9214" y1="31.0896" x2="56.99" y2="31.21" width="0.254" layer="1"/>
-<via x="54.6354" y="31.0896" extent="1-16" drill="0.6096"/>
-</signal>
-<signal name="N$51">
-<contactref element="U$3" pad="DIO5"/>
-<contactref element="D5" pad="TP"/>
-<wire x1="54.864" y1="34.29" x2="52.705" y2="34.29" width="0.254" layer="16"/>
-<wire x1="56.007" y1="34.29" x2="54.864" y2="34.29" width="0.254" layer="1"/>
-<wire x1="56.9214" y1="33.3756" x2="56.007" y2="34.29" width="0.254" layer="1"/>
-<wire x1="56.9214" y1="33.3756" x2="56.99" y2="33.21" width="0.254" layer="1"/>
-<via x="54.864" y="34.29" extent="1-16" drill="0.6096"/>
 </signal>
 <signal name="N$52">
 <contactref element="U$2" pad="DIO2"/>
