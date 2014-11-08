@@ -8090,11 +8090,11 @@ type 0309, grid 2.5 mm</description>
 <part name="X1" library="con-coax" deviceset="BU-SMA-V" device=""/>
 <part name="X2" library="con-coax" deviceset="BU-SMA-V" device=""/>
 <part name="JP1" library="adafruit" deviceset="PINHD-1X6" device=""/>
-<part name="U$1" library="LPC812" deviceset="LPC812M101JD20" device=""/>
+<part name="LPC812_RFM69" library="LPC812" deviceset="LPC812M101JD20" device=""/>
 <part name="U$3" library="hoperf-rfmxx" deviceset="RFM69HW" device=""/>
 <part name="JP2" library="adafruit" deviceset="PINHD-1X6" device=""/>
 <part name="P+4" library="supply1" deviceset="VCC" device=""/>
-<part name="U$5" library="LPC812" deviceset="LPC812M101JD20" device=""/>
+<part name="LPC812_RFM98" library="LPC812" deviceset="LPC812M101JD20" device=""/>
 <part name="JP4" library="adafruit" deviceset="PINHD-1X6" device=""/>
 <part name="JP5" library="adafruit" deviceset="PINHD-1X3" device=""/>
 <part name="P+3" library="supply1" deviceset="VCC" device=""/>
@@ -8107,12 +8107,12 @@ type 0309, grid 2.5 mm</description>
 <part name="C1" library="adafruit" deviceset="C-US" device="C0805" value="100nF"/>
 <part name="TP1" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="JP7" library="adafruit" deviceset="PINHD-1X3" device=""/>
-<part name="TP3" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="TP3X" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="TP4" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="TP5" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="D_5" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="GND1" library="supply1" deviceset="GND" device="" value="GND_69"/>
-<part name="C2" library="adafruit" deviceset="C-US" device="C0805" value="0.1uF"/>
+<part name="C2" library="adafruit" deviceset="C-US" device="C0805" value="100nF"/>
 <part name="JP3" library="adafruit" deviceset="PINHD-1X3" device=""/>
 <part name="GND3" library="supply1" deviceset="GND" device="" value="GND_69"/>
 <part name="GND4" library="supply1" deviceset="GND" device="" value="GND_69"/>
@@ -8140,7 +8140,7 @@ type 0309, grid 2.5 mm</description>
 <part name="TP12" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="P+1" library="supply1" deviceset="VCC" device=""/>
 <part name="GND_RFM1" library="supply1" deviceset="GND" device=""/>
-<part name="P14" library="testpad" deviceset="TP" device="B1,27"/>
+<part name="PIO0_14" library="testpad" deviceset="TP" device="B1,27"/>
 </parts>
 <sheets>
 <sheet>
@@ -8151,11 +8151,11 @@ type 0309, grid 2.5 mm</description>
 <instance part="X1" gate="G$1" x="35.56" y="-48.26" rot="R180"/>
 <instance part="X2" gate="G$1" x="30.48" y="25.4" rot="R180"/>
 <instance part="JP1" gate="A" x="-43.18" y="40.64"/>
-<instance part="U$1" gate="G$1" x="-91.44" y="45.72"/>
+<instance part="LPC812_RFM69" gate="G$1" x="-91.44" y="45.72"/>
 <instance part="U$3" gate="G$1" x="0" y="40.64"/>
 <instance part="JP2" gate="A" x="-137.16" y="60.96"/>
 <instance part="P+4" gate="VCC" x="-15.24" y="-20.32"/>
-<instance part="U$5" gate="G$1" x="-91.44" y="-27.94"/>
+<instance part="LPC812_RFM98" gate="G$1" x="-91.44" y="-27.94"/>
 <instance part="JP4" gate="A" x="-40.64" y="-33.02"/>
 <instance part="JP5" gate="A" x="55.88" y="5.08"/>
 <instance part="P+3" gate="VCC" x="63.5" y="17.78"/>
@@ -8168,7 +8168,7 @@ type 0309, grid 2.5 mm</description>
 <instance part="C1" gate="G$1" x="-96.52" y="0" rot="R270"/>
 <instance part="TP1" gate="G$1" x="-121.92" y="-38.1" rot="R90"/>
 <instance part="JP7" gate="A" x="-137.16" y="-30.48"/>
-<instance part="TP3" gate="G$1" x="22.86" y="-35.56" rot="R270"/>
+<instance part="TP3X" gate="G$1" x="22.86" y="-35.56" rot="R270"/>
 <instance part="TP4" gate="G$1" x="-121.92" y="-35.56" rot="R90"/>
 <instance part="TP5" gate="G$1" x="-121.92" y="-33.02" rot="R90"/>
 <instance part="D_5" gate="G$1" x="22.86" y="-38.1" rot="R270"/>
@@ -8201,7 +8201,7 @@ type 0309, grid 2.5 mm</description>
 <instance part="TP12" gate="G$1" x="22.86" y="-30.48" rot="R270"/>
 <instance part="P+1" gate="VCC" x="-93.98" y="2.54"/>
 <instance part="GND_RFM1" gate="1" x="-101.6" y="2.54" rot="R180"/>
-<instance part="P14" gate="G$1" x="-58.42" y="60.96"/>
+<instance part="PIO0_14" gate="G$1" x="-58.42" y="60.96"/>
 </instances>
 <busses>
 </busses>
@@ -8230,7 +8230,7 @@ type 0309, grid 2.5 mm</description>
 <pinref part="P+5" gate="VCC" pin="VCC"/>
 </segment>
 <segment>
-<pinref part="U$1" gate="G$1" pin="VDD"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="VDD"/>
 <pinref part="C2" gate="G$1" pin="1"/>
 <wire x1="-93.98" y1="66.04" x2="-93.98" y2="76.2" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="78.74" x2="-93.98" y2="76.2" width="0.1524" layer="91"/>
@@ -8245,7 +8245,7 @@ type 0309, grid 2.5 mm</description>
 </segment>
 <segment>
 <pinref part="C1" gate="G$1" pin="1"/>
-<pinref part="U$5" gate="G$1" pin="VDD"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="VDD"/>
 <wire x1="-93.98" y1="0" x2="-93.98" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="P+1" gate="VCC" pin="VCC"/>
 <junction x="-93.98" y="0"/>
@@ -8262,7 +8262,7 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$9" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="PIO0_8/XTALIN"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_8/XTALIN"/>
 <pinref part="JP4" gate="A" pin="3"/>
 <wire x1="-58.42" y1="-30.48" x2="-43.18" y2="-30.48" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="MOSI"/>
@@ -8272,7 +8272,7 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$10" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="PIO0_9/XTALOUT"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_9/XTALOUT"/>
 <wire x1="-58.42" y1="-33.02" x2="-43.18" y2="-33.02" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="4"/>
 <pinref part="U$2" gate="G$1" pin="SCK"/>
@@ -8282,7 +8282,7 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="PIO0_15"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_15"/>
 <pinref part="JP4" gate="A" pin="6"/>
 <wire x1="-58.42" y1="-38.1" x2="-43.18" y2="-38.1" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="RESET"/>
@@ -8292,7 +8292,7 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$13" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_15"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_15"/>
 <pinref part="JP1" gate="A" pin="6"/>
 <wire x1="-58.42" y1="35.56" x2="-45.72" y2="35.56" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="RESET"/>
@@ -8302,7 +8302,7 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$14" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_1/ACMP_I2/CLKIN/TDI"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_1/ACMP_I2/CLKIN/TDI"/>
 <pinref part="JP1" gate="A" pin="5"/>
 <wire x1="-58.42" y1="38.1" x2="-45.72" y2="38.1" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="NSS"/>
@@ -8312,7 +8312,7 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$15" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_9/XTALOUT"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_9/XTALOUT"/>
 <pinref part="JP1" gate="A" pin="4"/>
 <wire x1="-58.42" y1="40.64" x2="-45.72" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="MOSI"/>
@@ -8322,7 +8322,7 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$16" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_8/XTALIN"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_8/XTALIN"/>
 <pinref part="JP1" gate="A" pin="3"/>
 <wire x1="-58.42" y1="43.18" x2="-45.72" y2="43.18" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="MISO"/>
@@ -8332,7 +8332,7 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$19" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_7"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_7"/>
 <wire x1="-58.42" y1="50.8" x2="-58.42" y2="45.72" width="0.1524" layer="91"/>
 <pinref part="JP1" gate="A" pin="2"/>
 <wire x1="-58.42" y1="45.72" x2="-45.72" y2="45.72" width="0.1524" layer="91"/>
@@ -8344,7 +8344,7 @@ type 0309, grid 2.5 mm</description>
 <net name="N$8" class="0">
 <segment>
 <pinref part="JP4" gate="A" pin="5"/>
-<pinref part="U$5" gate="G$1" pin="PIO0_1/ACMP_I2/CLKIN/TDI"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_1/ACMP_I2/CLKIN/TDI"/>
 <wire x1="-58.42" y1="-35.56" x2="-43.18" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="NSS"/>
 <wire x1="-43.18" y1="-35.56" x2="-15.24" y2="-35.56" width="0.1524" layer="91"/>
@@ -8396,7 +8396,7 @@ type 0309, grid 2.5 mm</description>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="VSS"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="VSS"/>
 <wire x1="-99.06" y1="66.04" x2="-99.06" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-99.06" y1="68.58" x2="-101.6" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="-101.6" y1="68.58" x2="-101.6" y2="76.2" width="0.1524" layer="91"/>
@@ -8423,7 +8423,7 @@ type 0309, grid 2.5 mm</description>
 <segment>
 <pinref part="C1" gate="G$1" pin="2"/>
 <wire x1="-101.6" y1="0" x2="-101.6" y2="-7.62" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="VSS"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="VSS"/>
 <wire x1="-101.6" y1="-7.62" x2="-99.06" y2="-7.62" width="0.1524" layer="91"/>
 <pinref part="GND_RFM1" gate="1" pin="GND"/>
 <junction x="-101.6" y="0"/>
@@ -8431,7 +8431,7 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="PIO0_7"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_7"/>
 <wire x1="-58.42" y1="-22.86" x2="-53.34" y2="-22.86" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="-22.86" x2="-53.34" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="JP4" gate="A" pin="2"/>
@@ -8446,7 +8446,7 @@ type 0309, grid 2.5 mm</description>
 <pinref part="JP6" gate="A" pin="6"/>
 <wire x1="-139.7" y1="-17.78" x2="-127" y2="-17.78" width="0.1524" layer="91"/>
 <wire x1="-127" y1="-17.78" x2="-127" y2="-22.86" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="PIO0_5/RESET"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_5/RESET"/>
 <wire x1="-127" y1="-22.86" x2="-119.38" y2="-22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8455,7 +8455,7 @@ type 0309, grid 2.5 mm</description>
 <pinref part="JP6" gate="A" pin="5"/>
 <wire x1="-139.7" y1="-15.24" x2="-124.46" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-124.46" y1="-15.24" x2="-124.46" y2="-25.4" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="PIO0_4/WAKEUP/TRST"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_4/WAKEUP/TRST"/>
 <wire x1="-124.46" y1="-25.4" x2="-119.38" y2="-25.4" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8464,7 +8464,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-124.46" y1="-12.7" x2="-124.46" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-124.46" y1="10.16" x2="-53.34" y2="10.16" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="10.16" x2="-53.34" y2="-17.78" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="PIO0_0/ACMP_I1/TDO"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_0/ACMP_I1/TDO"/>
 <wire x1="-53.34" y1="-17.78" x2="-58.42" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="JP6" gate="A" pin="4"/>
 <wire x1="-139.7" y1="-12.7" x2="-124.46" y2="-12.7" width="0.1524" layer="91"/>
@@ -8475,7 +8475,7 @@ type 0309, grid 2.5 mm</description>
 <pinref part="JP6" gate="A" pin="2"/>
 <wire x1="-139.7" y1="-7.62" x2="-121.92" y2="-7.62" width="0.1524" layer="91"/>
 <wire x1="-121.92" y1="-7.62" x2="-121.92" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="PIO0_12"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_12"/>
 <wire x1="-121.92" y1="-20.32" x2="-119.38" y2="-20.32" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8490,7 +8490,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-33.02" y1="-25.4" x2="-43.18" y2="-25.4" width="0.1524" layer="91"/>
 <wire x1="-33.02" y1="-15.24" x2="-50.8" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-50.8" y1="-15.24" x2="-50.8" y2="-20.32" width="0.1524" layer="91"/>
-<pinref part="U$5" gate="G$1" pin="PIO0_6/VDDCMP"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_6/VDDCMP"/>
 <wire x1="-50.8" y1="-20.32" x2="-58.42" y2="-20.32" width="0.1524" layer="91"/>
 <junction x="-33.02" y="-15.24"/>
 <wire x1="30.48" y1="-25.4" x2="66.04" y2="-25.4" width="0.1524" layer="91"/>
@@ -8501,13 +8501,13 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$25" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="PIO0_16"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_16"/>
 <pinref part="TP1" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$27" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="PIO0_14"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_14"/>
 <wire x1="-58.42" y1="-15.24" x2="-55.88" y2="-15.24" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="-15.24" x2="-55.88" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="-10.16" x2="38.1" y2="-10.16" width="0.1524" layer="91"/>
@@ -8519,32 +8519,32 @@ type 0309, grid 2.5 mm</description>
 <net name="N$28" class="0">
 <segment>
 <pinref part="JP7" gate="A" pin="1"/>
-<pinref part="U$5" gate="G$1" pin="PIO0_3/SWCLK/TCK"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_3/SWCLK/TCK"/>
 <wire x1="-139.7" y1="-27.94" x2="-119.38" y2="-27.94" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$29" class="0">
 <segment>
 <pinref part="JP7" gate="A" pin="2"/>
-<pinref part="U$5" gate="G$1" pin="PIO0_2/SWDIO/TMS"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_2/SWDIO/TMS"/>
 <wire x1="-139.7" y1="-30.48" x2="-119.38" y2="-30.48" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$31" class="0">
 <segment>
 <pinref part="U$2" gate="G$1" pin="DIO4"/>
-<pinref part="TP3" gate="G$1" pin="TP"/>
+<pinref part="TP3X" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$32" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="PIO0_10"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_10"/>
 <pinref part="TP4" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$33" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="PIO0_11"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_11"/>
 <pinref part="TP5" gate="G$1" pin="TP"/>
 </segment>
 </net>
@@ -8559,7 +8559,7 @@ type 0309, grid 2.5 mm</description>
 <pinref part="JP2" gate="A" pin="2"/>
 <wire x1="-139.7" y1="66.04" x2="-124.46" y2="66.04" width="0.1524" layer="91"/>
 <wire x1="-124.46" y1="66.04" x2="-124.46" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PIO0_12"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_12"/>
 <wire x1="-124.46" y1="53.34" x2="-119.38" y2="53.34" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8568,21 +8568,21 @@ type 0309, grid 2.5 mm</description>
 <pinref part="JP2" gate="A" pin="6"/>
 <wire x1="-139.7" y1="55.88" x2="-129.54" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="-129.54" y1="55.88" x2="-129.54" y2="50.8" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PIO0_5/RESET"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_5/RESET"/>
 <wire x1="-129.54" y1="50.8" x2="-119.38" y2="50.8" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="1"/>
-<pinref part="U$1" gate="G$1" pin="PIO0_3/SWCLK/TCK"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_3/SWCLK/TCK"/>
 <wire x1="-139.7" y1="45.72" x2="-119.38" y2="45.72" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$23" class="0">
 <segment>
 <pinref part="JP3" gate="A" pin="2"/>
-<pinref part="U$1" gate="G$1" pin="PIO0_2/SWDIO/TMS"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_2/SWDIO/TMS"/>
 <wire x1="-139.7" y1="43.18" x2="-119.38" y2="43.18" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8591,7 +8591,7 @@ type 0309, grid 2.5 mm</description>
 <pinref part="JP2" gate="A" pin="5"/>
 <wire x1="-139.7" y1="58.42" x2="-127" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="-127" y1="58.42" x2="-127" y2="48.26" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PIO0_4/WAKEUP/TRST"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_4/WAKEUP/TRST"/>
 <wire x1="-127" y1="48.26" x2="-119.38" y2="48.26" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8602,7 +8602,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="25.4" y1="48.26" x2="25.4" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="60.96" x2="-53.34" y2="60.96" width="0.1524" layer="91"/>
 <wire x1="-53.34" y1="60.96" x2="-53.34" y2="53.34" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PIO0_6/VDDCMP"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_6/VDDCMP"/>
 <wire x1="-53.34" y1="53.34" x2="-58.42" y2="53.34" width="0.1524" layer="91"/>
 <pinref part="LED2" gate="G$1" pin="A"/>
 <wire x1="25.4" y1="48.26" x2="50.8" y2="48.26" width="0.1524" layer="91"/>
@@ -8616,7 +8616,7 @@ type 0309, grid 2.5 mm</description>
 <wire x1="-121.92" y1="60.96" x2="-121.92" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-121.92" y1="71.12" x2="-55.88" y2="71.12" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="71.12" x2="-55.88" y2="55.88" width="0.1524" layer="91"/>
-<pinref part="U$1" gate="G$1" pin="PIO0_0/ACMP_I1/TDO"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_0/ACMP_I1/TDO"/>
 <wire x1="-55.88" y1="55.88" x2="-58.42" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8635,7 +8635,7 @@ type 0309, grid 2.5 mm</description>
 <net name="N$36" class="0">
 <segment>
 <pinref part="LED3" gate="G$1" pin="A"/>
-<pinref part="U$1" gate="G$1" pin="PIO0_17"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_17"/>
 <wire x1="-119.38" y1="83.82" x2="-119.38" y2="58.42" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -8653,25 +8653,25 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$26" class="0">
 <segment>
-<pinref part="U$5" gate="G$1" pin="PIO0_17"/>
+<pinref part="LPC812_RFM98" gate="G$1" pin="PIO0_17"/>
 <pinref part="LED4" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$41" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_11"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_11"/>
 <pinref part="TP7" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$43" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_10"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_10"/>
 <pinref part="TP8" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$44" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_16"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_16"/>
 <pinref part="TP9" gate="G$1" pin="TP"/>
 </segment>
 </net>
@@ -8683,8 +8683,8 @@ type 0309, grid 2.5 mm</description>
 </net>
 <net name="N$46" class="0">
 <segment>
-<pinref part="U$1" gate="G$1" pin="PIO0_14"/>
-<pinref part="P14" gate="G$1" pin="TP"/>
+<pinref part="LPC812_RFM69" gate="G$1" pin="PIO0_14"/>
+<pinref part="PIO0_14" gate="G$1" pin="TP"/>
 </segment>
 </net>
 </nets>
