@@ -8107,7 +8107,6 @@ type 0309, grid 2.5 mm</description>
 <part name="C1" library="adafruit" deviceset="C-US" device="C0805" value="100nF"/>
 <part name="TP1" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="JP7" library="adafruit" deviceset="PINHD-1X3" device=""/>
-<part name="TP2" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="TP3" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="TP4" library="testpad" deviceset="TP" device="B1,27"/>
 <part name="TP5" library="testpad" deviceset="TP" device="B1,27"/>
@@ -8169,7 +8168,6 @@ type 0309, grid 2.5 mm</description>
 <instance part="C1" gate="G$1" x="-96.52" y="0" rot="R270"/>
 <instance part="TP1" gate="G$1" x="-121.92" y="-38.1" rot="R90"/>
 <instance part="JP7" gate="A" x="-137.16" y="-30.48"/>
-<instance part="TP2" gate="G$1" x="22.86" y="-33.02" rot="R270"/>
 <instance part="TP3" gate="G$1" x="22.86" y="-35.56" rot="R270"/>
 <instance part="TP4" gate="G$1" x="-121.92" y="-35.56" rot="R90"/>
 <instance part="TP5" gate="G$1" x="-121.92" y="-33.02" rot="R90"/>
@@ -8530,12 +8528,6 @@ type 0309, grid 2.5 mm</description>
 <pinref part="JP7" gate="A" pin="2"/>
 <pinref part="U$5" gate="G$1" pin="PIO0_2/SWDIO/TMS"/>
 <wire x1="-139.7" y1="-30.48" x2="-119.38" y2="-30.48" width="0.1524" layer="91"/>
-</segment>
-</net>
-<net name="N$30" class="0">
-<segment>
-<pinref part="U$2" gate="G$1" pin="DIO3"/>
-<pinref part="TP2" gate="G$1" pin="TP"/>
 </segment>
 </net>
 <net name="N$31" class="0">
