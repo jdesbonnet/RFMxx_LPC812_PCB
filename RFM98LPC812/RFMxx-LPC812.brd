@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.0125" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2452,12 +2452,12 @@ Your Eurocircuits Team
 <signal name="N$35">
 <contactref element="JP2" pad="4"/>
 <contactref element="LPC812_RFM69" pad="19"/>
-<wire x1="11.8872" y1="31.5468" x2="18.288" y2="31.5468" width="0.254" layer="1"/>
-<wire x1="5.0292" y1="31.5468" x2="11.8872" y2="31.5468" width="0.254" layer="16"/>
+<wire x1="12.2047" y1="31.5468" x2="18.288" y2="31.5468" width="0.254" layer="1"/>
+<wire x1="5.0292" y1="31.5468" x2="12.2047" y2="31.5468" width="0.254" layer="16"/>
 <wire x1="2.0574" y1="28.575" x2="5.0292" y2="31.5468" width="0.254" layer="16"/>
 <wire x1="18.288" y1="31.5468" x2="18.3642" y2="31.75" width="0.254" layer="1"/>
 <wire x1="2.0574" y1="28.575" x2="1.905" y2="28.575" width="0.254" layer="16"/>
-<via x="11.8872" y="31.5468" extent="1-16" drill="0.6096" diameter="1.27"/>
+<via x="12.2047" y="31.5468" extent="1-16" drill="0.6096" diameter="1.27"/>
 </signal>
 <signal name="N$37">
 <contactref element="R1" pad="2"/>
