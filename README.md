@@ -1,4 +1,9 @@
-# RFMxx_LPC812
-PCB board to experiment with HopeRF RFM69 and RFM98 radio modules. Uses ARM Cortex-M0+ LPC812 as controller. Board firmware is here: https://github.com/jdesbonnet/RFM69_LPC812_firmware
+# RFM69HW and RFM98W experimentation board with option for LPC812 MCU
+
+This is a PCB board to experiment with HopeRF RFM69HW and RFM98 radio modules (or any modules in that family with a compatible footprint). 
+
+The module can be accessed directly throught JP1 which breaks out the modules SPI bus and a few other pins.
+
+Alternatively a LPC812 (ARM Cortex-M0+ MCU) can be soldered on the board as a controller. Firmware for the LPC812 is here: https://github.com/jdesbonnet/RFM69_LPC812_firmware
 
 ![populated RFM69HW version of the PCB](./doc/rfm69hw_board_populated.jpg)
