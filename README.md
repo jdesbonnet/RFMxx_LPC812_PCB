@@ -13,6 +13,8 @@ http://jdesbonnet.blogspot.ie/2014/12/experiments-with-rfm69-433mhz-digital.html
 
 ![PCB layout](./doc/pcb_layout.png)
 
+![schematic](./doc/schematic.png)
+
 # Pin out
 
 Leftmost column of 6 pins (from top): RESET, UART_TXD, UART_RXD, NC, ISP_ENTRY, GND.
