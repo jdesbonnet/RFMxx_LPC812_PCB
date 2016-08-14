@@ -10,3 +10,5 @@ There is a blog post discussing this in more detail here:
 http://jdesbonnet.blogspot.ie/2014/12/experiments-with-rfm69-433mhz-digital.html
 
 ![populated RFM69HW version of the PCB](./doc/rfm69hw_board_populated.jpg)
+
+![PCB layout](./doc/pcb_layout.png)
