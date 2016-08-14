@@ -19,15 +19,15 @@ http://jdesbonnet.blogspot.ie/2014/12/experiments-with-rfm69-433mhz-digital.html
 
 ## Common to RFM69 and RFM98 boards
 
-Leftmost column of 6 pins (from top): RESET, UART_TXD, UART_RXD, NC, ISP_ENTRY, GND.
+Leftmost column of 6 pins (from top to bottom): RESET, UART_TXD, UART_RXD, NC, ISP_ENTRY, GND.
 
-Second column from left of 3 pins (from top): SWD_CLOCK, SWD_DATA, NC.
+Second column from left of 3 pins (from top to bottom): SWD_CLOCK, SWD_DATA, NC.
 
 ## RFM69
-Three pin row above MCU (from left): 3.3V, GND, NC.
+Three pin row above MCU (from left to right): 3.3V, GND, NC.
 
 ## RFM98 
-Three pin rwo at top-right corner of the board (from left):  3.3V, GND, NC.
+Three pin row at top-right corner of the board (from left to right):  3.3V, GND, NC.
 
 NC: not connect. SWD: serial wire debug. 
 
