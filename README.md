@@ -12,3 +12,15 @@ http://jdesbonnet.blogspot.ie/2014/12/experiments-with-rfm69-433mhz-digital.html
 ![populated RFM69HW version of the PCB](./doc/rfm69hw_board_populated.jpg)
 
 ![PCB layout](./doc/pcb_layout.png)
+
+# Pin out
+
+Leftmost column of 6 pins (from top): RESET, UART_TXD, UART_RXD, NC, ISP_ENTRY, GND.
+
+Second column from left of 3 pins (from top): SWD_CLOCK, SWD_DATA, NC.
+
+3 pin row above MCU (from left): 3.3V, GND, NC.
+
+NC: not connect. SWD: serial wire debug. 
+
+
