@@ -31,4 +31,8 @@ Three pin row at top-right corner of the board (from left to right):  3.3V, GND,
 
 NC: not connect. SWD: serial wire debug. 
 
-
+# Lessons from first iteration of PCB
+ * Keep spacing of headers and test pads snapped to 0.1in grid to facilitate easy construction of bed of nails test rig on proto board.
+ * Include power and ground on all headers even if it duplicates.
+ * For traces that may become optional use 0 ohm jumper resistors to complete link, or use test pads to allow easy reconnection if a trace needs to be cut (undoing a manually cut trace is a pain).
+ * Choice of font on v1 board was too small.
