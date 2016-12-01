@@ -36,3 +36,4 @@ NC: not connect. SWD: serial wire debug.
  * Include power and ground on all headers even if it duplicates.
  * For traces that may become optional use 0 ohm jumper resistors to complete link, or use test pads to allow easy reconnection if a trace needs to be cut (undoing a manually cut trace is a pain).
  * Choice of font on v1 board was too small.
+ * Consider side SMA connector
