@@ -1,4 +1,4 @@
-update=Sun 08 Apr 2018 20:14:33 IST
+update=Sat 14 Apr 2018 19:37:40 IST
 version=1
 last_client=kicad
 [pcbnew]
@@ -63,4 +63,3 @@ LibName31=contrib
 LibName32=valves
 LibName33=MCU_NXP_LPC
 LibName34=RFM_module
-LibName35=lpc824
