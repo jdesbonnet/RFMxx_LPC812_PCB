@@ -15,14 +15,25 @@ http://jdesbonnet.blogspot.ie/2014/12/experiments-with-rfm69-433mhz-digital.html
 
 ![schematic](./doc/schematic.png)
 
-# Pin out
+# Pinout
 
-Leftmost column of 6 pins (from top): RESET, UART_TXD, UART_RXD, NC, ISP_ENTRY, GND.
+## Common to RFM69 and RFM98 boards
 
-Second column from left of 3 pins (from top): SWD_CLOCK, SWD_DATA, NC.
+Leftmost column of 6 pins (from top to bottom): RESET, UART_TXD, UART_RXD, NC, ISP_ENTRY, GND.
 
-3 pin row above MCU (from left): 3.3V, GND, NC.
+Second column from left of 3 pins (from top to bottom): SWD_CLOCK, SWD_DATA, NC.
+
+## RFM69
+Three pin row above MCU (from left to right): 3.3V, GND, NC.
+
+## RFM98 
+Three pin row at top-right corner of the board (from left to right):  3.3V, GND, NC.
 
 NC: not connect. SWD: serial wire debug. 
 
-
+# Lessons from first iteration of PCB
+ * Keep spacing of headers and test pads snapped to 0.1in grid to facilitate easy construction of bed of nails test rig on proto board.
+ * Include power and ground on all headers even if it duplicates.
+ * For traces that may become optional use 0 ohm jumper resistors to complete link, or use test pads to allow easy reconnection if a trace needs to be cut (undoing a manually cut trace is a pain).
+ * Choice of font on v1 board was too small.
+ * Consider side SMA connector
