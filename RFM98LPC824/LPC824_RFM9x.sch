@@ -153,7 +153,7 @@ U 1 1 5ACAB065
 P 5350 1300
 F 0 "U3" H 5050 1550 50  0000 L CNN
 F 1 "AT25_EEPROM" H 5400 1550 50  0000 L CNN
-F 2 "adafruit:SOIC8_208MIL" H 5000 1250 50  0001 C CNN
+F 2 "adafruit:SO08" H 5000 1250 50  0001 C CNN
 F 3 "" H 5000 1250 50  0001 C CNN
 	1    5350 1300
 	1    0    0    -1  
@@ -187,7 +187,7 @@ MOSI
 Text GLabel 5750 1400 2    60   Input ~ 0
 MISO
 Text GLabel 4950 1400 0    60   Input ~ 0
-CS_FLM
+FLASH_CS
 Text GLabel 1750 2200 0    60   Input ~ 0
 RXD
 Text GLabel 1750 2600 0    60   Input ~ 0
@@ -257,7 +257,7 @@ DS18B20
 Text GLabel 3800 2900 2    60   Input ~ 0
 DIO0
 Text GLabel 3800 2300 2    60   Input ~ 0
-GPIO11
+FLASH_CS
 Text GLabel 4300 2600 2    60   Input ~ 0
 RFM_CS
 Text GLabel 3150 1000 0    60   Input ~ 0
@@ -511,34 +511,12 @@ F 3 "" H 8400 3200 50  0001 C CNN
 	1    8400 3200
 	0    1    1    0   
 $EndComp
-$Comp
-L TEST TP6
-U 1 1 5AD0930C
-P 9450 2700
-F 0 "TP6" H 9450 3000 50  0000 C BNN
-F 1 "TEST" H 9450 2950 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 9450 2700 50  0001 C CNN
-F 3 "" H 9450 2700 50  0001 C CNN
-	1    9450 2700
-	0    1    1    0   
-$EndComp
 Text GLabel 8400 2950 0    60   Input ~ 0
 DIO4
 Text GLabel 8400 3200 0    60   Input ~ 0
 DIO5
-Text GLabel 9450 2700 0    60   Input ~ 0
+Text GLabel 2050 5250 0    60   Input ~ 0
 GPIO13
-$Comp
-L TEST TP8
-U 1 1 5AD098D1
-P 9450 3200
-F 0 "TP8" H 9450 3500 50  0000 C BNN
-F 1 "TEST" H 9450 3450 50  0000 C CNN
-F 2 "Measurement_Points:Measurement_Point_Round-SMD-Pad_Small" H 9450 3200 50  0001 C CNN
-F 3 "" H 9450 3200 50  0001 C CNN
-	1    9450 3200
-	0    1    1    0   
-$EndComp
-Text GLabel 9450 3200 0    60   Input ~ 0
-GPIO11
+Wire Wire Line
+	2050 5250 2400 5250
 $EndSCHEMATC
