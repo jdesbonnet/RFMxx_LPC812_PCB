@@ -37,3 +37,9 @@ NC: not connect. SWD: serial wire debug.
  * For traces that may become optional use 0 ohm jumper resistors to complete link, or use test pads to allow easy reconnection if a trace needs to be cut (undoing a manually cut trace is a pain).
  * Choice of font on v1 board was too small.
  * Consider side SMA connector
+ 
+ # Version 2 PCB using LPC824
+ 
+ ![3D rendering of v2.0.x PCB](./RFM98LPC824/LPC824_RFM9x_3D_render.jpg)
+
+[Version 2 project files](./RFM98LPC824)
