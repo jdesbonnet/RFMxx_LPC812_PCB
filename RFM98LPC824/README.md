@@ -15,3 +15,11 @@ Improvement on 2014 design: more compact board.
  * Minor track layout change to space flash MISO line further from flash MOSI.
 
 V2.0.1 board arrived back from OSHPark on 2018-05-11.
+
+## Header pinouts
+
+(from top to bottom in the redering above)
+
+J3: GND, ISPE, 3.3V, RXD, TXD, RESET
+
+J4: GND, GPIO13, 3.3V, SWCLK, SWDIO, RESET
