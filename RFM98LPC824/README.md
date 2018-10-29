@@ -23,3 +23,9 @@ V2.0.1 board arrived back from OSHPark on 2018-05-11.
 J3: GND, ISPE, 3.3V, RXD, TXD, RESET
 
 J4: GND, GPIO13, 3.3V, SWCLK, SWDIO, RESET
+
+## Hardware notes:
+
+SPI bus is shared with RFM module and flash IC.
+
+FLASH_CS: PIO0_11, MOSI: PIO0_9, MISO: PIO0_8, RFM_CS: PIO0_14
