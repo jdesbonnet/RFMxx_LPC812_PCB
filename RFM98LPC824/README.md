@@ -28,5 +28,9 @@ J4: GND, GPIO13, 3.3V, SWCLK, SWDIO, RESET
 
 SPI bus is shared with RFM module and flash IC. Flash IC is 25P16 (or any SPI flash with similar pinout).
 
-
-FLASH_CS: PIO0_11, MOSI: PIO0_9, MISO: PIO0_8, RFM_CS: PIO0_14
+| Function | Pin     |
+|----------|---------|
+| FLASH_CS | PIO0_11 |
+| MOSI     | PIO0_9  |
+| MISO     | PIO0_8  | 
+| RFM_CS   | PIO0_15 |
