@@ -28,9 +28,11 @@ J4: GND, GPIO13, 3.3V, SWCLK, SWDIO, RESET
 
 SPI bus is shared with RFM module and flash IC. Flash IC is 25P16 (or any SPI flash with similar pinout).
 
-| Function | Pin     |
-|----------|---------|
-| FLASH_CS | PIO0_11 |
-| MOSI     | PIO0_9  |
-| MISO     | PIO0_8  | 
-| RFM_CS   | PIO0_15 |
+| Function | Pin     |  |
+|----------|---------|--|
+| FLASH_CS | PIO0_11 | This is a hardware bug: PIO0_11 is open drain: cannot drive high w/o external pullup R |
+| MOSI     | PIO0_9  |  |
+| MISO     | PIO0_8  |  |
+| RFM_CS   | PIO0_15 |  |
+
+Temporary fix for FLASH_CS bug is to route GPIO0_13 from J4 with bodge wire. An alternative approach would be to glue SMD R for pull up to back of PCB. Will shuffle the pins in next PCB to that PIO0_11 is used only for input. Also may have problem with PIO0_10 used for the DS18B20.
