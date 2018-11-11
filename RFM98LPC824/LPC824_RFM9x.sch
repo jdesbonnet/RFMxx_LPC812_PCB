@@ -4,9 +4,9 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
+Title "FarmEye soil temperature sensor"
 Date ""
-Rev ""
+Rev "2.0.1"
 Comp ""
 Comment1 ""
 Comment2 ""

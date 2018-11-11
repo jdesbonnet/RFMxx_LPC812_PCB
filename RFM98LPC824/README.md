@@ -5,6 +5,8 @@ IC.
 
 ![3D rendering of v2.0.x PCB](./LPC824_RFM9x_3D_render.jpg)
 
+![Schematic](./LPC824_RFM9x_schematic.png)
+
 ## V2.0.0 2018-04-14
 
 Improvement on 2014 design: more compact board.
