@@ -35,7 +35,11 @@ SPI bus is shared with RFM module and flash IC. Flash IC is 25P16 (or any SPI fl
 | FLASH_CS | PIO0_11 | This is a hardware bug: PIO0_11 is open drain: cannot drive high w/o external pullup R |
 | MOSI     | PIO0_9  |  |
 | MISO     | PIO0_8  |  |
+| SCK      | PIO0_1  |  |
 | RFM_CS   | PIO0_15 |  |
+| LED      | PIO0_17 |  |
+| DIO0     | PIO0_23 |  |
+| DS18B20  | PIO0_10 |  |
 
 Temporary fix for FLASH_CS bug is to route GPIO0_13 from J4 with bodge wire. An alternative approach would be to glue SMD R for pull up to back of PCB. Will shuffle the pins in next PCB to that PIO0_11 is used only for input. Also may have problem with PIO0_10 used for the DS18B20.
 
