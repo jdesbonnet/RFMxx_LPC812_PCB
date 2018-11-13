@@ -46,4 +46,4 @@ Temporary fix for FLASH_CS bug is to route GPIO0_13 from J4 with bodge wire. An 
 
 DS18B20 confirmed to work. A 0603 4.7K SMD R is soldered between the 3.3V and data on J2. 0603 is about the perfect size for that hack. Unclear if this will have any impact of the deep sleep current consumption.
 
-The external flash IC chosen has a deep-sleep current much larger than what can be achieved with the LPC824 on its own. Seeing something in the order of 20µA (vs 3µA from LPC824 in powerdown). However there are parts which claim much better deep sleep performance eg Macronix MX25R6435F which is pin compatible.
+The external flash IC chosen has a deep-sleep current much larger than what can be achieved with the LPC824 on its own. Seeing something in the order of 20µA (vs 3µA from LPC824 in powerdown). However there are parts which claim much better deep sleep performance eg Macronix MX25R6435F which is pin compatible. http://www.macronix.com/en-us/products/NOR-Flash/Pages/Ultra-Low-Power-Flash.aspx
