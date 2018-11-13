@@ -45,3 +45,5 @@ SPI bus is shared with RFM module and flash IC. Flash IC is 25P16 (or any SPI fl
 Temporary fix for FLASH_CS bug is to route GPIO0_13 from J4 with bodge wire. An alternative approach would be to glue SMD R for pull up to back of PCB. Will shuffle the pins in next PCB to that PIO0_11 is used only for input. Also may have problem with PIO0_10 used for the DS18B20.
 
 DS18B20 confirmed to work. A 0603 4.7K SMD R is soldered between the 3.3V and data on J2. 0603 is about the perfect size for that hack. Unclear if this will have any impact of the deep sleep current consumption.
+
+The external flash IC chosen has a deep-sleep current much larger than what can be achieved with the LPC824 on its own. Seeing something in the order of 20µA (vs 3µA from LPC824 in powerdown). However there are parts which claim much better deep sleep performance eg Macronix MX25R6435F which is pin compatible.
