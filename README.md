@@ -1,4 +1,4 @@
-# RFM69HW and RFM98W experimentation board with option for LPC812 MCU
+# RFM69HW and RFM98W experimentation board with option for LPC812/LPC824 MCU
 
 This is a PCB board to experiment with HopeRF RFM69HW and RFM98 radio modules (or any modules in that family with a compatible footprint). 
 
