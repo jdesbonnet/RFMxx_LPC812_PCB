@@ -44,3 +44,4 @@ NC: not connect. SWD: serial wire debug.
 
 [Version 2 project files](./RFM98LPC824)
 
+
