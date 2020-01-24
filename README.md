@@ -43,3 +43,4 @@ NC: not connect. SWD: serial wire debug.
  ![3D rendering of v2.0.x PCB](./RFM98LPC824/LPC824_RFM9x_3D_render.jpg)
 
 [Version 2 project files](./RFM98LPC824)
+
